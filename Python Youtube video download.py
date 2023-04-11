@@ -14,7 +14,7 @@ ys = yt.streams.get_highest_resolution()
 output_file =  f'{yt.title}.mp4'
 cleaned_filename = clean_filename(output_file)
 
-output_path = os.path.join(os.path.expanduser("~"), "Downloads") #to path to user's Downloads folder
+output_path = os.path.join(os.path.expanduser("~"), "Downloads") #to get path to user's Downloads folder
 ys.download(output_path= output_path, filename=cleaned_filename)
 print('Video downloaded successfully to your Downloads folder.')
 
